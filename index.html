@@ -4,34 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Tahir Dastan Hair Design | Konak İzmir</title>
+  <title>Tahir Dastan Hair Design | Kadın Kuaförü</title>
 
-  <meta name="description" content="Tahir Dastan Hair Design — İzmir Konak'ta profesyonel saç tasarımı ve kuaför hizmetleri. WhatsApp üzerinden hızlıca randevu alın.">
-  <meta name="keywords" content="Tahir Dastan Hair Design, İzmir kuaför, Konak kuaför, saç tasarımı, kadın kuaförü, saç kesimi">
-  <meta name="author" content="Tahir Dastan Hair Design">
-
-  <meta property="og:title" content="Tahir Dastan Hair Design">
-  <meta property="og:description" content="Profesyonel saç tasarımı ve kişisel stil dokunuşları.">
-  <meta property="og:type" content="website">
+  <meta
+    name="description"
+    content="Tahir Dastan Hair Design – kadın saç kesimi, saç tasarımı, renklendirme, ombre, balayage, saç bakımı ve özel gün saç tasarımları."
+  >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
     :root {
       --bg: #11100f;
       --bg-soft: #191716;
       --card: #211e1c;
-      --cream: #f3eee7;
-      --muted: #aaa29a;
-      --gold: #c6a36a;
-      --gold-light: #e2c795;
-      --border: rgba(255,255,255,.09);
-      --white: #fff;
-      --whatsapp: #25D366;
-      --max: 1180px;
+      --card-light: #282421;
+      --cream: #f6f0e8;
+      --muted: #b8afa6;
+      --gold: #c9a46a;
+      --gold-light: #dfc18b;
+      --line: rgba(255,255,255,.09);
+      --white: #ffffff;
     }
 
     * {
@@ -45,11 +44,16 @@
     }
 
     body {
+      font-family: "DM Sans", sans-serif;
       background: var(--bg);
       color: var(--cream);
-      font-family: "DM Sans", sans-serif;
       line-height: 1.6;
       overflow-x: hidden;
+    }
+
+    img {
+      display: block;
+      width: 100%;
     }
 
     a {
@@ -57,113 +61,121 @@
       text-decoration: none;
     }
 
-    img {
-      max-width: 100%;
-      display: block;
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
     }
 
     .container {
-      width: min(var(--max), calc(100% - 40px));
-      margin: auto;
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
     }
 
-    /* NAVBAR */
+    /* =========================
+       NAVBAR
+    ========================= */
 
-    header {
+    .navbar {
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
+      right: 0;
       z-index: 1000;
-      transition: .3s ease;
-    }
-
-    header.scrolled {
-      background: rgba(17,16,15,.94);
+      background: rgba(17,16,15,.86);
       backdrop-filter: blur(18px);
-      border-bottom: 1px solid var(--border);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(255,255,255,.06);
     }
 
-    .nav {
-      height: 82px;
+    .nav-inner {
+      height: 78px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 30px;
     }
 
     .logo {
       font-family: "Playfair Display", serif;
       font-size: 21px;
+      font-weight: 600;
       letter-spacing: .5px;
+      white-space: nowrap;
     }
 
     .logo span {
-      display: block;
-      font-family: "DM Sans", sans-serif;
-      font-size: 9px;
-      letter-spacing: 3px;
-      color: var(--gold);
-      margin-top: -3px;
-      text-transform: uppercase;
+      color: var(--gold-light);
     }
 
     .nav-links {
       display: flex;
-      gap: 30px;
       align-items: center;
-      list-style: none;
+      gap: 30px;
+      font-size: 14px;
+      color: #d6cec5;
     }
 
     .nav-links a {
-      color: #d7d0c9;
-      font-size: 13px;
-      transition: .25s;
+      transition: .25s ease;
     }
 
     .nav-links a:hover {
       color: var(--gold-light);
     }
 
-    .nav-cta {
-      background: var(--cream);
-      color: #151311;
-      padding: 12px 19px;
-      border-radius: 2px;
-      font-size: 12px;
-      font-weight: 700;
-      transition: .25s;
+    .nav-button {
+      padding: 12px 20px;
+      border: 1px solid rgba(201,164,106,.55);
+      color: var(--cream);
+      border-radius: 999px;
+      transition: .25s ease;
+      font-size: 13px;
+      font-weight: 600;
     }
 
-    .nav-cta:hover {
-      background: var(--gold-light);
-      transform: translateY(-2px);
+    .nav-button:hover {
+      background: var(--gold);
+      color: #17130f;
+      border-color: var(--gold);
     }
 
-    .menu-btn {
-      display: none;
-      border: 0;
-      background: transparent;
-      color: white;
-      font-size: 25px;
-      cursor: pointer;
-    }
-
-    /* HERO */
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
       min-height: 100vh;
       position: relative;
       display: flex;
       align-items: center;
+      overflow: hidden;
       background:
-        linear-gradient(90deg, rgba(8,7,6,.88) 0%, rgba(8,7,6,.62) 45%, rgba(8,7,6,.35) 100%),
-        linear-gradient(0deg, rgba(8,7,6,.55), transparent 45%),
+        linear-gradient(
+          90deg,
+          rgba(12,11,10,.94) 0%,
+          rgba(12,11,10,.72) 45%,
+          rgba(12,11,10,.25) 100%
+        ),
         url("Gemini_Generated_Image_3yl3ji3yl3ji3yl3.jpg") center/cover no-repeat;
     }
 
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        0deg,
+        var(--bg) 0%,
+        transparent 22%
+      );
+      pointer-events: none;
+    }
+
     .hero-content {
-      padding-top: 80px;
-      max-width: 720px;
+      position: relative;
+      z-index: 2;
+      width: min(700px, 100%);
+      padding-top: 90px;
     }
 
     .eyebrow {
@@ -171,62 +183,64 @@
       align-items: center;
       gap: 10px;
       color: var(--gold-light);
-      font-size: 11px;
-      letter-spacing: 3px;
       text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 11px;
+      font-weight: 700;
       margin-bottom: 20px;
     }
 
     .eyebrow::before {
       content: "";
-      width: 32px;
+      width: 34px;
       height: 1px;
       background: var(--gold);
     }
 
     .hero h1 {
       font-family: "Playfair Display", serif;
-      font-size: clamp(54px, 7vw, 94px);
+      font-size: clamp(52px, 7vw, 88px);
       line-height: .98;
-      font-weight: 600;
-      letter-spacing: -3px;
+      font-weight: 500;
+      letter-spacing: -2px;
       margin-bottom: 25px;
     }
 
     .hero h1 em {
       color: var(--gold-light);
-      font-style: normal;
+      font-style: italic;
     }
 
-    .hero-text {
-      color: #d1cbc5;
+    .hero-description {
+      max-width: 570px;
+      color: #d0c8c0;
       font-size: 17px;
-      max-width: 520px;
-      margin-bottom: 32px;
+      line-height: 1.8;
+      margin-bottom: 34px;
     }
 
-    .hero-buttons {
+    .hero-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 14px;
     }
 
     .btn {
       display: inline-flex;
-      justify-content: center;
       align-items: center;
-      gap: 9px;
+      justify-content: center;
       min-height: 52px;
-      padding: 0 23px;
-      font-size: 13px;
+      padding: 0 25px;
+      border-radius: 999px;
+      font-size: 14px;
       font-weight: 700;
-      border-radius: 2px;
       transition: .25s ease;
+      border: 1px solid transparent;
     }
 
     .btn-primary {
-      background: var(--cream);
-      color: #151311;
+      background: var(--gold);
+      color: #17130f;
     }
 
     .btn-primary:hover {
@@ -234,329 +248,228 @@
       transform: translateY(-2px);
     }
 
-    .btn-outline {
-      border: 1px solid rgba(255,255,255,.35);
-      color: white;
+    .btn-secondary {
+      border-color: rgba(255,255,255,.22);
+      color: var(--cream);
+      background: rgba(255,255,255,.04);
     }
 
-    .btn-outline:hover {
+    .btn-secondary:hover {
       border-color: var(--gold);
       color: var(--gold-light);
+      transform: translateY(-2px);
     }
 
-    .rating {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-top: 32px;
-      font-size: 13px;
-      color: #c9c2bb;
-    }
-
-    .stars {
-      color: var(--gold-light);
-      letter-spacing: 2px;
-    }
-
-    /* SECTION */
+    /* =========================
+       GENERAL SECTIONS
+    ========================= */
 
     section {
       padding: 110px 0;
     }
 
     .section-head {
-      margin-bottom: 50px;
-      max-width: 650px;
+      max-width: 720px;
+      margin-bottom: 55px;
     }
 
     .kicker {
-      color: var(--gold);
-      font-size: 10px;
-      letter-spacing: 3px;
+      color: var(--gold-light);
       text-transform: uppercase;
-      margin-bottom: 12px;
+      letter-spacing: 3px;
+      font-size: 11px;
+      font-weight: 700;
+      margin-bottom: 14px;
     }
 
-    h2 {
+    .h2 {
       font-family: "Playfair Display", serif;
       font-size: clamp(38px, 5vw, 58px);
-      line-height: 1.05;
-      font-weight: 600;
+      font-weight: 500;
+      line-height: 1.08;
+      letter-spacing: -1px;
     }
 
-    .section-sub {
+    .h2 em {
+      color: var(--gold-light);
+      font-style: italic;
+    }
+
+    .sec-sub {
+      margin-top: 18px;
       color: var(--muted);
-      margin-top: 17px;
-      font-size: 15px;
+      font-size: 16px;
+      max-width: 650px;
+      line-height: 1.8;
     }
 
-    /* SERVICES */
+    /* =========================
+       SERVICES
+    ========================= */
 
     .services {
-      background: var(--bg-soft);
+      background: var(--bg);
     }
 
     .service-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
+      gap: 16px;
     }
 
-    .service {
+    .service-card {
       position: relative;
-      min-height: 230px;
-      padding: 30px;
+      padding: 32px;
+      min-height: 220px;
       background: var(--card);
-      border: 1px solid var(--border);
-      transition: .3s;
+      border: 1px solid var(--line);
+      transition: .3s ease;
       overflow: hidden;
     }
 
-    .service::after {
+    .service-card::after {
       content: "";
       position: absolute;
-      right: -50px;
+      width: 140px;
+      height: 140px;
+      right: -60px;
       bottom: -70px;
-      width: 160px;
-      height: 160px;
       border-radius: 50%;
-      background: rgba(198,163,106,.06);
+      background: rgba(201,164,106,.08);
+      transition: .3s ease;
     }
 
-    .service:hover {
+    .service-card:hover {
       transform: translateY(-5px);
-      border-color: rgba(198,163,106,.35);
+      border-color: rgba(201,164,106,.35);
+    }
+
+    .service-card:hover::after {
+      transform: scale(1.3);
     }
 
     .service-number {
       color: var(--gold);
-      font-size: 11px;
+      font-size: 12px;
+      font-weight: 700;
       letter-spacing: 2px;
-      margin-bottom: 40px;
+      margin-bottom: 35px;
     }
 
-    .service h3 {
+    .service-card h3 {
       font-family: "Playfair Display", serif;
-      font-size: 26px;
-      margin-bottom: 10px;
+      font-size: 27px;
+      font-weight: 500;
+      margin-bottom: 12px;
     }
 
-    .service p {
+    .service-card p {
       color: var(--muted);
-      font-size: 13px;
+      font-size: 14px;
+      max-width: 290px;
     }
 
-    /* ABOUT */
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about {
+      background: var(--bg-soft);
+    }
 
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 80px;
+      gap: 70px;
       align-items: center;
     }
 
     .about-image {
-      min-height: 550px;
-      background:
-        linear-gradient(rgba(0,0,0,.08), rgba(0,0,0,.3)),
-        url("unnamed.jpg") center/cover no-repeat;
-      background-position: center;
+      position: relative;
     }
 
-    .about-copy p {
+    .about-image img {
+      height: 620px;
+      object-fit: cover;
+      border-radius: 2px;
+    }
+
+    .about-image::after {
+      content: "";
+      position: absolute;
+      width: 80%;
+      height: 80%;
+      border: 1px solid rgba(201,164,106,.4);
+      left: -18px;
+      bottom: -18px;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .about-image img {
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-text .h2 {
+      margin-bottom: 25px;
+    }
+
+    .about-text p {
       color: var(--muted);
-      margin: 22px 0;
-      font-size: 15px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 1.9;
     }
 
-    .features {
+    .about-points {
+      margin-top: 32px;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      margin-top: 35px;
+      gap: 14px;
     }
 
-    .feature {
-      border-top: 1px solid var(--border);
-      padding-top: 17px;
-    }
-
-    .feature strong {
-      display: block;
-      margin-bottom: 5px;
+    .about-point {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      color: #ddd5cd;
       font-size: 14px;
     }
 
-    .feature span {
-      color: var(--muted);
-      font-size: 12px;
-    }
-
-    /* REVIEWS */
-
-    .reviews {
-      background: var(--bg-soft);
-    }
-
-    .review-box {
-      border: 1px solid var(--border);
-      padding: 50px;
-      display: grid;
-      grid-template-columns: 280px 1fr;
-      gap: 70px;
-      align-items: center;
-      background: linear-gradient(135deg, #211e1c, #171514);
-    }
-
-    .score {
-      font-family: "Playfair Display", serif;
-      font-size: 75px;
-      line-height: 1;
-      color: var(--gold-light);
-    }
-
-    .score-small {
-      color: var(--muted);
-      font-size: 13px;
-      margin-top: 10px;
-    }
-
-    .review-copy h3 {
-      font-family: "Playfair Display", serif;
-      font-size: 30px;
-      margin-bottom: 12px;
-    }
-
-    .review-copy p {
-      color: var(--muted);
-      margin-bottom: 22px;
-    }
-
-    /* CTA */
-
-    .appointment {
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      background:
-        radial-gradient(circle at center, rgba(198,163,106,.12), transparent 45%),
-        var(--bg);
-    }
-
-    .appointment h2 {
-      max-width: 700px;
-      margin: auto;
-    }
-
-    .appointment p {
-      color: var(--muted);
-      margin: 18px auto 28px;
-      max-width: 500px;
-    }
-
-    /* LOCATION */
-
-    .location-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-    }
-
-    .location-card {
-      padding: 40px;
-      background: var(--card);
-      border: 1px solid var(--border);
-    }
-
-    .location-card h3 {
-      font-family: "Playfair Display", serif;
-      font-size: 28px;
-      margin-bottom: 18px;
-    }
-
-    .address {
-      color: var(--muted);
-      margin-bottom: 28px;
-    }
-
-    .hours {
-      list-style: none;
-      margin-top: 25px;
-    }
-
-    .hours li {
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid var(--border);
-      padding: 10px 0;
-      color: #cfc8c1;
-      font-size: 13px;
-    }
-
-    .hours li.closed {
-      color: #8d8580;
-    }
-
-    .map {
-      min-height: 430px;
-      border: 1px solid var(--border);
-      background:
-        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.55)),
-        url("https://images.unsplash.com/photo-1524666041070-9f8767c6b4e3?auto=format&fit=crop&w=1200&q=80") center/cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    /* INSTAGRAM / GALLERY */
-
-    .instagram {
-      background: var(--bg-soft);
-    }
-
-    .instagram-inner {
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .instagram-icon {
-      width: 52px;
-      height: 52px;
-      border: 1px solid var(--gold);
+    .about-point span {
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
-      display: grid;
-      place-items: center;
-      margin: 0 auto 22px;
-      color: var(--gold-light);
-      font-size: 21px;
+      background: var(--gold);
+      flex: 0 0 auto;
     }
 
-    .gallery {
-      margin-top: 55px;
+    /* =========================
+       GALLERY
+    ========================= */
+
+    .gallery-section {
+      background: var(--bg);
+    }
+
+    .gallery-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-      text-align: left;
+      gap: 14px;
     }
 
     .gallery-item {
       position: relative;
-      height: 360px;
+      aspect-ratio: 4 / 5;
       overflow: hidden;
       background: var(--card);
-      border: 1px solid var(--border);
     }
 
     .gallery-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform .6s ease;
-    }
-
-    .gallery-item:hover img {
-      transform: scale(1.05);
+      transition: transform .5s ease;
     }
 
     .gallery-item::after {
@@ -564,83 +477,387 @@
       position: absolute;
       inset: 0;
       background: linear-gradient(
-        180deg,
-        transparent 55%,
-        rgba(0,0,0,.35)
+        to top,
+        rgba(0,0,0,.3),
+        transparent 50%
       );
       pointer-events: none;
     }
 
-    /* FOOTER */
+    .gallery-item:hover img {
+      transform: scale(1.06);
+    }
+
+    /* =========================
+       REVIEWS
+    ========================= */
+
+    .reviews {
+      background: var(--bg-soft);
+    }
+
+    .review-summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      padding: 28px 30px;
+      margin-bottom: 28px;
+      background: var(--card);
+      border: 1px solid var(--line);
+    }
+
+    .review-score {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .score-number {
+      font-family: "Playfair Display", serif;
+      font-size: 52px;
+      line-height: 1;
+      color: var(--cream);
+    }
+
+    .review-score-info {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .review-stars {
+      color: var(--gold-light);
+      letter-spacing: 3px;
+      font-size: 17px;
+    }
+
+    .review-score-info span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .review-google-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 21px;
+      border: 1px solid rgba(201,164,106,.5);
+      border-radius: 999px;
+      color: var(--cream);
+      font-size: 13px;
+      font-weight: 700;
+      transition: .25s ease;
+      white-space: nowrap;
+    }
+
+    .review-google-btn:hover {
+      background: var(--gold);
+      color: #17130f;
+      border-color: var(--gold);
+    }
+
+    .review-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .review-card {
+      padding: 28px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      display: flex;
+      flex-direction: column;
+      min-height: 320px;
+    }
+
+    .review-card-top {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin-bottom: 20px;
+    }
+
+    .review-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #302b27;
+      color: var(--gold-light);
+      font-family: "Playfair Display", serif;
+      font-size: 18px;
+      flex: 0 0 auto;
+    }
+
+    .review-card strong {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+
+    .review-source {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .review-card .stars {
+      color: var(--gold-light);
+      letter-spacing: 2px;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .review-card p {
+      color: #c8c0b8;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .appointment {
+      background:
+        linear-gradient(
+          110deg,
+          rgba(24,20,17,.97),
+          rgba(24,20,17,.78)
+        ),
+        url("Gemini_Generated_Image_3yl3ji3yl3ji3yl3.jpg") center/cover no-repeat;
+      position: relative;
+    }
+
+    .appointment-box {
+      max-width: 820px;
+    }
+
+    .appointment-box .h2 {
+      margin-bottom: 22px;
+    }
+
+    .appointment-box p {
+      max-width: 620px;
+      color: #cec5bd;
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    /* =========================
+       LOCATION
+    ========================= */
+
+    .location {
+      background: var(--bg);
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 40px;
+    }
+
+    .map-card {
+      min-height: 460px;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(
+          rgba(20,18,16,.25),
+          rgba(20,18,16,.7)
+        ),
+        url("https://images.unsplash.com/photo-1524666041070-9f8765f9a8a5?auto=format&fit=crop&w=1400&q=85")
+        center/cover no-repeat;
+    }
+
+    .map-content {
+      position: absolute;
+      left: 30px;
+      bottom: 30px;
+      right: 30px;
+      padding: 24px;
+      background: rgba(17,16,15,.88);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+
+    .map-content h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .map-content p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .location-info {
+      padding: 10px 0;
+    }
+
+    .info-block {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .info-block:first-child {
+      padding-top: 0;
+    }
+
+    .info-label {
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 10px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .info-value {
+      color: var(--cream);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .hours {
+      display: grid;
+      gap: 7px;
+    }
+
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      color: #d1c8c0;
+      font-size: 14px;
+    }
+
+    .hours-row span:last-child {
+      color: var(--gold-light);
+      text-align: right;
+    }
+
+    /* =========================
+       INSTAGRAM
+    ========================= */
+
+    .instagram {
+      background: var(--bg-soft);
+    }
+
+    .instagram-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 35px;
+    }
+
+    .instagram-link {
+      color: var(--gold-light);
+      font-size: 14px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .instagram-link:hover {
+      text-decoration: underline;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
-      padding: 45px 0 25px;
-      border-top: 1px solid var(--border);
+      padding: 45px 0 30px;
+      background: #0c0b0a;
+      border-top: 1px solid var(--line);
     }
 
     .footer-top {
       display: flex;
+      align-items: center;
       justify-content: space-between;
       gap: 30px;
-      padding-bottom: 35px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--line);
     }
 
-    .footer-brand p {
-      color: var(--muted);
-      font-size: 12px;
-      margin-top: 8px;
+    .footer-brand {
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+    }
+
+    .footer-brand span {
+      color: var(--gold-light);
     }
 
     .footer-links {
       display: flex;
-      gap: 25px;
-      font-size: 12px;
+      gap: 22px;
       color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-light);
     }
 
     .footer-bottom {
-      padding-top: 20px;
-      border-top: 1px solid var(--border);
-      color: #716b66;
-      font-size: 11px;
       display: flex;
+      align-items: center;
       justify-content: space-between;
+      gap: 20px;
+      padding-top: 25px;
+      color: #817a74;
+      font-size: 12px;
     }
 
-    /* FLOATING WHATSAPP */
+    /* =========================
+       WHATSAPP
+    ========================= */
 
-    .whatsapp {
+    .whatsapp-float {
       position: fixed;
       right: 22px;
       bottom: 22px;
-      z-index: 900;
-      background: var(--whatsapp);
-      color: white;
-      padding: 13px 18px;
-      border-radius: 40px;
-      display: flex;
-      align-items: center;
-      gap: 9px;
-      font-size: 12px;
-      font-weight: 700;
-      box-shadow: 0 10px 30px rgba(0,0,0,.35);
-      transition: .25s;
+      z-index: 999;
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #25D366;
+      color: #fff;
+      box-shadow: 0 10px 35px rgba(0,0,0,.35);
+      transition: .25s ease;
     }
 
-    .whatsapp:hover {
-      transform: translateY(-3px);
+    .whatsapp-float:hover {
+      transform: translateY(-4px) scale(1.04);
     }
 
-    .whatsapp-icon {
-      font-size: 18px;
+    .whatsapp-float svg {
+      width: 28px;
+      height: 28px;
+      fill: currentColor;
     }
 
-    /* REVEAL */
+    /* =========================
+       SCROLL REVEAL
+    ========================= */
 
     .reveal {
       opacity: 0;
       transform: translateY(25px);
-      transition: .7s ease;
+      transition: opacity .8s ease, transform .8s ease;
     }
 
     .reveal.visible {
@@ -648,114 +865,82 @@
       transform: translateY(0);
     }
 
-    /* MOBILE */
+    /* =========================
+       RESPONSIVE
+    ========================= */
 
-    @media (max-width: 850px) {
-
-      .container {
-        width: min(var(--max), calc(100% - 28px));
-      }
-
-      .nav {
-        height: 70px;
-      }
-
-      .nav-links,
-      .nav-cta {
+    @media (max-width: 980px) {
+      .nav-links {
         display: none;
       }
 
-      .menu-btn {
-        display: block;
-      }
-
-      .hero {
-        min-height: 88vh;
-        background:
-          linear-gradient(90deg, rgba(8,7,6,.82), rgba(8,7,6,.48)),
-          linear-gradient(0deg, rgba(8,7,6,.7), transparent),
-          url("Gemini_Generated_Image_3yl3ji3yl3ji3yl3.jpg") center/cover no-repeat;
-      }
-
-      .hero h1 {
-        font-size: clamp(48px, 15vw, 72px);
-        letter-spacing: -2px;
-      }
-
-      .hero-text {
-        font-size: 15px;
-      }
-
-      section {
-        padding: 75px 0;
-      }
-
       .service-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
       }
 
-      .about-grid,
-      .location-grid {
+      .about-grid {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 55px;
       }
 
       .about-image {
-        min-height: 400px;
-        order: 2;
+        max-width: 650px;
       }
 
-      .review-box {
+      .review-list {
         grid-template-columns: 1fr;
-        gap: 30px;
-        padding: 32px;
       }
 
-      .score {
-        font-size: 62px;
+      .location-grid {
+        grid-template-columns: 1fr;
       }
 
-      .location-card {
-        padding: 28px;
-      }
-
-      .map {
-        min-height: 320px;
-      }
-
-      .gallery {
+      .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        margin-top: 40px;
-      }
-
-      .gallery-item {
-        height: 300px;
-      }
-
-      .footer-top {
-        flex-direction: column;
-      }
-
-      .footer-links {
-        flex-wrap: wrap;
-      }
-
-      .footer-bottom {
-        flex-direction: column;
-        gap: 7px;
-      }
-
-      .whatsapp {
-        right: 14px;
-        bottom: 14px;
-        padding: 13px 17px;
       }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 700px) {
+      .container {
+        width: min(100% - 28px, 1180px);
+      }
 
-      .hero-buttons {
+      .nav-inner {
+        height: 68px;
+      }
+
+      .logo {
+        font-size: 18px;
+      }
+
+      .nav-button {
+        padding: 10px 15px;
+        font-size: 12px;
+      }
+
+      section {
+        padding: 80px 0;
+      }
+
+      .hero {
+        min-height: 92vh;
+        background-position: 62% center;
+      }
+
+      .hero-content {
+        padding-top: 80px;
+      }
+
+      .hero h1 {
+        font-size: clamp(45px, 14vw, 68px);
+        letter-spacing: -1.5px;
+      }
+
+      .hero-description {
+        font-size: 15px;
+      }
+
+      .hero-actions {
         flex-direction: column;
         align-items: stretch;
       }
@@ -764,20 +949,77 @@
         width: 100%;
       }
 
-      .features {
+      .service-grid {
         grid-template-columns: 1fr;
       }
 
-      .hero-content {
-        padding-top: 60px;
+      .service-card {
+        min-height: 190px;
       }
 
-      .gallery {
-        grid-template-columns: 1fr;
+      .about-image img {
+        height: 450px;
       }
 
-      .gallery-item {
-        height: 430px;
+      .about-image::after {
+        left: -10px;
+        bottom: -10px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 9px;
+      }
+
+      .review-summary {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+      }
+
+      .review-score {
+        justify-content: center;
+      }
+
+      .review-google-btn {
+        width: 100%;
+      }
+
+      .review-card {
+        padding: 22px;
+        min-height: auto;
+      }
+
+      .map-card {
+        min-height: 400px;
+      }
+
+      .map-content {
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+      }
+
+      .instagram-head {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .footer-top,
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-links {
+        flex-wrap: wrap;
+      }
+
+      .whatsapp-float {
+        width: 54px;
+        height: 54px;
+        right: 16px;
+        bottom: 16px;
       }
     }
   </style>
@@ -785,617 +1027,860 @@
 
 <body>
 
-<header id="header">
-  <div class="container nav">
-
-    <a href="#anasayfa" class="logo">
-      Tahir Dastan
-      <span>Hair Design</span>
-    </a>
-
-    <ul class="nav-links">
-      <li><a href="#anasayfa">Ana Sayfa</a></li>
-      <li><a href="#hizmetler">Hizmetler</a></li>
-      <li><a href="#hakkimizda">Hakkımızda</a></li>
-      <li><a href="#yorumlar">Yorumlar</a></li>
-      <li><a href="#iletisim">İletişim</a></li>
-    </ul>
-
-    <a class="nav-cta"
-       href="https://wa.me/905301822270?text=Merhaba%2C%20Tahir%20Dastan%20Hair%20Design%27dan%20randevu%20almak%20istiyorum.%20Uygun%20g%C3%BCn%20ve%20saatleri%20%C3%B6%C4%9Frenebilir%20miyim%3F"
-       target="_blank">
-      Randevu Al
-    </a>
-
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-
-  </div>
-</header>
-
-<main>
-
-  <!-- HERO -->
-
-  <section class="hero" id="anasayfa">
-
-    <div class="container">
-      <div class="hero-content reveal">
-
-        <div class="eyebrow">
-          Hair Design Studio
-        </div>
-
-        <h1>
-          Tarzını<br>
-          <em>Baştan Tasarla.</em>
-        </h1>
-
-        <p class="hero-text">
-          Profesyonel saç tasarımı, modern dokunuşlar
-          ve kişisel stil anlayışı.
-        </p>
-
-        <div class="hero-buttons">
-
-          <a class="btn btn-primary"
-             href="https://wa.me/905301822270?text=Merhaba%2C%20Tahir%20Dastan%20Hair%20Design%27dan%20randevu%20almak%20istiyorum.%20Uygun%20g%C3%BCn%20ve%20saatleri%20%C3%B6%C4%9Frenebilir%20miyim%3F"
-             target="_blank">
-            WhatsApp'tan Randevu Al
-          </a>
-
-          <a class="btn btn-outline"
-             href="https://maps.app.goo.gl/h6yJHbL4vkA2HwRU9"
-             target="_blank">
-            Yol Tarifi Al
-          </a>
-
-        </div>
-
-        <div class="rating">
-          <span class="stars">★★★★★</span>
-          <span>4.6 Google Puanı</span>
-        </div>
-
-      </div>
-    </div>
-
-  </section>
-
-  <!-- SERVICES -->
-
-  <section class="services" id="hizmetler">
-
-    <div class="container">
-
-      <div class="section-head reveal">
-        <div class="kicker">Hizmetler</div>
-
-        <h2>
-          Profesyonel Dokunuş,
-          <br>Net Sonuç.
-        </h2>
-
-        <p class="section-sub">
-          Kişisel stiline uygun, modern ve özenli saç tasarımı.
-        </p>
-      </div>
-
-      <div class="service-grid">
-
-        <article class="service reveal">
-          <div class="service-number">01</div>
-          <h3>Saç Kesimi</h3>
-          <p>
-            Yüz hatlarına ve kişisel stiline uygun modern kesimler.
-          </p>
-        </article>
-
-        <article class="service reveal">
-          <div class="service-number">02</div>
-          <h3>Saç Tasarımı</h3>
-          <p>
-            Güncel trendleri kişisel tarzınla buluşturan saç tasarımları.
-          </p>
-        </article>
-
-        <article class="service reveal">
-          <div class="service-number">03</div>
-          <h3>Sakal Tasarımı</h3>
-          <p>
-            Yüz şekline uygun, temiz ve dengeli sakal tasarımı.
-          </p>
-        </article>
-
-        <article class="service reveal">
-          <div class="service-number">04</div>
-          <h3>Saç & Sakal</h3>
-          <p>
-            Saç ve sakalın birlikte değerlendirildiği bütünsel stil.
-          </p>
-        </article>
-
-        <article class="service reveal">
-          <div class="service-number">05</div>
-          <h3>Şekillendirme</h3>
-          <p>
-            Günlük ve özel günler için profesyonel şekillendirme.
-          </p>
-        </article>
-
-        <article class="service reveal">
-          <div class="service-number">06</div>
-          <h3>Kişisel Stil</h3>
-          <p>
-            Tarzını yansıtan, sana özel görünüm üzerine danışmanlık.
-          </p>
-        </article>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- ABOUT -->
-
-  <section id="hakkimizda">
-
-    <div class="container">
-
-      <div class="about-grid">
-
-        <div class="about-image reveal"></div>
-
-        <div class="about-copy reveal">
-
-          <div class="kicker">Tahir Dastan Hair Design</div>
-
-          <h2>
-            Stil,
-            <br>
-            detaylarda
-            <em style="color:var(--gold-light);font-style:normal;">
-              başlar.
-            </em>
-          </h2>
-
-          <p>
-            Saç tasarımı yalnızca bir kesim değildir.
-            Yüz şekli, saç yapısı ve kişisel tarz birlikte
-            değerlendirilerek ortaya daha dengeli bir görünüm çıkar.
-          </p>
-
-          <p>
-            Tahir Dastan Hair Design'da amaç,
-            ziyaretinden sonra aynaya baktığında
-            tarzının gerçekten sana ait görünmesidir.
-          </p>
-
-          <div class="features">
-
-            <div class="feature">
-              <strong>Kişiye Özel Stil</strong>
-              <span>Yüz ve saç yapısına uygun tasarım.</span>
-            </div>
-
-            <div class="feature">
-              <strong>Modern Yaklaşım</strong>
-              <span>Güncel saç trendleri ve teknikleri.</span>
-            </div>
-
-            <div class="feature">
-              <strong>Özenli Uygulama</strong>
-              <span>Detaylara odaklanan çalışma.</span>
-            </div>
-
-            <div class="feature">
-              <strong>Kolay Randevu</strong>
-              <span>WhatsApp üzerinden hızlı iletişim.</span>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- REVIEWS -->
-
-  <section class="reviews" id="yorumlar">
-
-    <div class="container">
-
-      <div class="section-head reveal">
-
-        <div class="kicker">Google Reviews</div>
-
-        <h2>
-          Müşteriler
-          <br>Ne Diyor?
-        </h2>
-
-      </div>
-
-      <div class="review-box reveal">
-
-        <div>
-          <div class="score">4.6</div>
-
-          <div class="stars" style="font-size:18px;margin-top:8px;">
-            ★★★★★
-          </div>
-
-          <div class="score-small">
-            Google değerlendirme puanı
-          </div>
-        </div>
-
-        <div class="review-copy">
-
-          <h3>Gerçek deneyimler.</h3>
-
-          <p>
-            Tahir Dastan Hair Design hakkındaki güncel
-            değerlendirmeleri Google üzerinden inceleyebilirsin.
-          </p>
-
-          <a class="btn btn-primary"
-             href="https://maps.app.goo.gl/h6yJHbL4vkA2HwRU9"
-             target="_blank">
-            Google'da Yorumları Gör
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- APPOINTMENT -->
-
-  <section class="appointment">
-
-    <div class="container reveal">
-
-      <div class="kicker">Randevu</div>
-
-      <h2>
-        Yeni tarzın için
-        <br>
-        randevunu oluştur.
-      </h2>
-
-      <p>
-        Uygun gün ve saatleri öğrenmek için
-        WhatsApp üzerinden bize ulaş.
-      </p>
-
-      <a class="btn btn-primary"
-         href="https://wa.me/905301822270?text=Merhaba%2C%20Tahir%20Dastan%20Hair%20Design%27dan%20randevu%20almak%20istiyorum.%20Uygun%20g%C3%BCn%20ve%20saatleri%20%C3%B6%C4%9Frenebilir%20miyim%3F"
-         target="_blank">
-        WhatsApp'tan Randevu Al
+  <!-- =========================
+       NAVBAR
+  ========================= -->
+
+  <header class="navbar">
+    <div class="container nav-inner">
+
+      <a href="#anasayfa" class="logo">
+        Tahir Dastan <span>Hair Design</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#hikaye">Hakkımızda</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#yorumlar">Yorumlar</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+
+      <a
+        href="https://wa.me/905301822270?text=Merhaba%2C%20Tahir%20Dastan%20Hair%20Design%27dan%20randevu%20almak%20istiyorum.%20Uygun%20g%C3%BCn%20ve%20saatleri%20%C3%B6%C4%9Frenebilir%20miyim%3F"
+        class="nav-button"
+        target="_blank"
+      >
+        Randevu Al
       </a>
 
     </div>
+  </header>
 
-  </section>
 
-  <!-- LOCATION -->
+  <!-- =========================
+       HERO
+  ========================= -->
 
-  <section id="iletisim">
+  <main id="anasayfa">
 
-    <div class="container">
+    <section class="hero">
 
-      <div class="section-head reveal">
+      <div class="container">
 
-        <div class="kicker">İletişim & Konum</div>
+        <div class="hero-content reveal">
 
-        <h2>
-          Bizi
-          <br>ziyaret et.
-        </h2>
-
-      </div>
-
-      <div class="location-grid">
-
-        <div class="location-card reveal">
-
-          <h3>Tahir Dastan Hair Design</h3>
-
-          <div class="address">
-            Atilla, 474. Sk. No:109 D:111A,
-            35250 Konak / İzmir
+          <div class="eyebrow">
+            Women’s Hair Design
           </div>
 
-          <a class="btn btn-primary"
-             href="https://maps.app.goo.gl/h6yJHbL4vkA2HwRU9"
-             target="_blank">
-            Yol Tarifi Al
-          </a>
+          <h1>
+            Stiliniz,<br>
+            <em>size özel.</em>
+          </h1>
 
-          <ul class="hours">
+          <p class="hero-description">
+            Saçın sadece görünüş değil, tarzın bir parçası olduğuna inanıyoruz.
+            Tahir Dastan Hair Design’da kadın saç tasarımı, renklendirme ve
+            bakım uygulamaları kişiye özel bir anlayışla ele alınır.
+          </p>
 
-            <li>
-              <span>Pazartesi</span>
-              <span>09:00–20:00</span>
-            </li>
+          <div class="hero-actions">
 
-            <li class="closed">
-              <span>Salı</span>
-              <span>Kapalı</span>
-            </li>
+            <a
+              href="https://wa.me/905301822270?text=Merhaba%2C%20Tahir%20Dastan%20Hair%20Design%27dan%20randevu%20almak%20istiyorum.%20Uygun%20g%C3%BCn%20ve%20saatleri%20%C3%B6%C4%9Frenebilir%20miyim%3F"
+              class="btn btn-primary"
+              target="_blank"
+            >
+              WhatsApp’tan Randevu
+            </a>
 
-            <li>
-              <span>Çarşamba</span>
-              <span>09:00–20:00</span>
-            </li>
+            <a
+              href="#hizmetler"
+              class="btn btn-secondary"
+            >
+              Hizmetleri Keşfet
+            </a>
 
-            <li>
-              <span>Perşembe</span>
-              <span>09:00–20:00</span>
-            </li>
-
-            <li>
-              <span>Cuma</span>
-              <span>09:00–20:00</span>
-            </li>
-
-            <li>
-              <span>Cumartesi</span>
-              <span>09:00–20:00</span>
-            </li>
-
-            <li>
-              <span>Pazar</span>
-              <span>10:00–19:00</span>
-            </li>
-
-          </ul>
+          </div>
 
         </div>
 
-        <div class="map reveal">
+      </div>
 
-          <a class="btn btn-primary"
-             href="https://maps.app.goo.gl/h6yJHbL4vkA2HwRU9"
-             target="_blank">
-            Google Maps'te Aç
+    </section>
+
+
+    <!-- =========================
+         SERVICES
+    ========================= -->
+
+    <section class="services" id="hizmetler">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <div class="kicker">
+            Hizmetler
+          </div>
+
+          <h2 class="h2">
+            Saçınıza özel<br>
+            <em>dokunuşlar.</em>
+          </h2>
+
+          <p class="sec-sub">
+            Günlük stilinizden özel gün görünümünüze kadar kadın saç
+            tasarımına yönelik profesyonel hizmetler.
+          </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+          <article class="service-card reveal">
+            <div class="service-number">01</div>
+            <h3>Saç Kesimi</h3>
+            <p>
+              Yüz şeklinize ve tarzınıza uygun modern kadın saç kesimleri.
+            </p>
+          </article>
+
+
+          <article class="service-card reveal">
+            <div class="service-number">02</div>
+            <h3>Saç Tasarımı</h3>
+            <p>
+              Saçınızın yapısına ve kişisel stilinize uygun şekillendirme.
+            </p>
+          </article>
+
+
+          <article class="service-card reveal">
+            <div class="service-number">03</div>
+            <h3>Saç Renklendirme</h3>
+            <p>
+              Tarzınıza uygun renk değişimleri ve kişiye özel saç renkleri.
+            </p>
+          </article>
+
+
+          <article class="service-card reveal">
+            <div class="service-number">04</div>
+            <h3>Ombre &amp; Balayage</h3>
+            <p>
+              Doğal geçişler ve modern renk teknikleriyle boyutlu saç görünümü.
+            </p>
+          </article>
+
+
+          <article class="service-card reveal">
+            <div class="service-number">05</div>
+            <h3>Saç Bakımı</h3>
+            <p>
+              Yıpranmış ve bakıma ihtiyaç duyan saçlar için bakım uygulamaları.
+            </p>
+          </article>
+
+
+          <article class="service-card reveal">
+            <div class="service-number">06</div>
+            <h3>Özel Gün Saç Tasarımı</h3>
+            <p>
+              Davet, organizasyon ve özel günler için kişiye özel saç tasarımları.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================= -->
+
+    <section class="about" id="hikaye">
+
+      <div class="container">
+
+        <div class="about-grid">
+
+          <div class="about-image reveal">
+
+            <img
+              src="unnamed.jpg"
+              alt="Tahir Dastan Hair Design"
+            >
+
+          </div>
+
+
+          <div class="about-text reveal">
+
+            <div class="kicker">
+              Stil, detaylarda başlar
+            </div>
+
+            <h2 class="h2">
+              Saçınızın <em>hikâyesini</em> birlikte yazalım.
+            </h2>
+
+            <p>
+              Her saçın kendine özgü bir yapısı, karakteri ve ihtiyacı vardır.
+              Bu nedenle saç tasarımında tek bir kalıba bağlı kalmak yerine,
+              kişiye özel çözümler sunmaya odaklanıyoruz.
+            </p>
+
+            <p>
+              Amacımız yalnızca salon ziyaretiniz sırasında güzel görünen
+              değil, günlük hayatınızda da kendinizi iyi hissetmenizi sağlayan
+              bir saç görünümü oluşturmak.
+            </p>
+
+            <div class="about-points">
+
+              <div class="about-point">
+                <span></span>
+                Kişiye özel saç tasarımı
+              </div>
+
+              <div class="about-point">
+                <span></span>
+                Modern kadın saç uygulamaları
+              </div>
+
+              <div class="about-point">
+                <span></span>
+                Detaylı ve özenli çalışma
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         GALLERY
+    ========================= -->
+
+    <section class="gallery-section" id="galeri">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <div class="kicker">
+            Stilimizden Kareler
+          </div>
+
+          <h2 class="h2">
+            Gerçek <em>dokunuşlar.</em>
+          </h2>
+
+          <p class="sec-sub">
+            Tahir Dastan Hair Design’dan seçilmiş çalışmalar.
+          </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+          <div class="gallery-item reveal">
+            <img
+              src="731058971_18324032986276415_7768105891657908004_n.jpg"
+              alt="Tahir Dastan Hair Design saç çalışması"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="gallery-item reveal">
+            <img
+              src="746073840_18325449121276415_2716768327370740384_n.jpg"
+              alt="Tahir Dastan Hair Design saç çalışması"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="gallery-item reveal">
+            <img
+              src="764340786_18328825699276415_1482809935894578885_n.jpg"
+              alt="Tahir Dastan Hair Design saç çalışması"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="gallery-item reveal">
+            <img
+              src="805405881_18336066874276415_2627075590166724358_n.jpg"
+              alt="Tahir Dastan Hair Design saç çalışması"
+              loading="lazy"
+            >
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         REVIEWS
+    ========================= -->
+
+    <section class="reviews" id="yorumlar">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <div class="kicker">
+            Google Yorumları
+          </div>
+
+          <h2 class="h2">
+            Misafirlerimiz <em>ne diyor?</em>
+          </h2>
+
+          <p class="sec-sub">
+            Salon deneyimini yaşayan müşterilerimizin Google üzerindeki
+            değerlendirmelerinden seçilmiş yorumlar.
+          </p>
+
+        </div>
+
+
+        <div class="review-summary reveal">
+
+          <div class="review-score">
+
+            <div class="score-number">
+              4.6
+            </div>
+
+            <div class="review-score-info">
+
+              <div class="review-stars">
+                ★★★★★
+              </div>
+
+              <span>
+                Google değerlendirmesi
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <a
+            href="https://maps.app.goo.gl/h6yJHbL4vkA2HwRU9"
+            class="review-google-btn"
+            target="_blank"
+            rel="noopener"
+          >
+            Google’da Tüm Yorumları Gör
+          </a>
+
+        </div>
+
+
+        <div class="review-list">
+
+
+          <!-- REVIEW 1 -->
+
+          <article class="review-card reveal">
+
+            <div class="review-card-top">
+
+              <div class="review-avatar">
+                G
+              </div>
+
+              <div>
+                <strong>Google Kullanıcısı</strong>
+                <div class="review-source">
+                  Google Yorumu
+                </div>
+              </div>
+
+            </div>
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              Tahir Bey gerçekten işinin ehli bir insan. Saçımı yaptırırken
+              yaklaşımı, ilgisi ve detaylara verdiği önem çok hoşuma gitti.
+              Özellikle kıvırcık saç konusunda çok başarılı. Saçlarımı
+              şekillendirdiğinde buklelerim çok daha belirgin ve güzel oldu.
+              Kesinlikle tavsiye ederim.
+            </p>
+
+          </article>
+
+
+          <!-- REVIEW 2 -->
+
+          <article class="review-card reveal">
+
+            <div class="review-card-top">
+
+              <div class="review-avatar">
+                G
+              </div>
+
+              <div>
+                <strong>Google Kullanıcısı</strong>
+                <div class="review-source">
+                  Google Yorumu
+                </div>
+              </div>
+
+            </div>
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              Birçok kuaföre gittim ama Tahir Bey kadar işine bağlı ve
+              müşterisine değer veren birini çok az gördüm. Yardımcısı da
+              oldukça güler yüzlü ve ilgiliydi. Yıpranmış saçlarımı toparlamak
+              için gerçekten özen gösterdiler. Bundan sonra sürekli geleceğim
+              bir yer oldu.
+            </p>
+
+          </article>
+
+
+          <!-- REVIEW 3 -->
+
+          <article class="review-card reveal">
+
+            <div class="review-card-top">
+
+              <div class="review-avatar">
+                G
+              </div>
+
+              <div>
+                <strong>Google Kullanıcısı</strong>
+                <div class="review-source">
+                  Google Yorumu
+                </div>
+              </div>
+
+            </div>
+
+            <div class="stars">
+              ★★★☆☆
+            </div>
+
+            <p>
+              Vişne çürüğü renginde bir boya istemiştim. Dipler turuncu,
+              uçlar ise siyah kaldı. İki kez boya yapmak zorunda kaldık.
+              Hijyen ve misafirperverlik konusunda herhangi bir problem
+              yaşamadım ancak ortaya çıkan sonuçtan memnun kalmadım.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         APPOINTMENT CTA
+    ========================= -->
+
+    <section class="appointment">
+
+      <div class="container">
+
+        <div class="appointment-box reveal">
+
+          <div class="kicker">
+            Randevunuzu Oluşturun
+          </div>
+
+          <h2 class="h2">
+            Yeni stiliniz<br>
+            <em>bir mesaj kadar yakın.</em>
+          </h2>
+
+          <p>
+            Uygun gün ve saatleri öğrenmek ve randevu oluşturmak için
+            WhatsApp üzerinden bizimle iletişime geçebilirsiniz.
+          </p>
+
+          <a
+            href="https://wa.me/905301822270?text=Merhaba%2C%20Tahir%20Dastan%20Hair%20Design%27dan%20randevu%20almak%20istiyorum.%20Uygun%20g%C3%BCn%20ve%20saatleri%20%C3%B6%C4%9Frenebilir%20miyim%3F"
+            class="btn btn-primary"
+            target="_blank"
+          >
+            WhatsApp’tan Randevu Al
           </a>
 
         </div>
 
       </div>
 
-    </div>
+    </section>
 
-  </section>
 
-  <!-- INSTAGRAM / STİLİMİZDEN KARELER -->
+    <!-- =========================
+         LOCATION
+    ========================= -->
 
-  <section class="instagram">
+    <section class="location" id="iletisim">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <div class="kicker">
+            İletişim
+          </div>
+
+          <h2 class="h2">
+            Bize <em>ulaşın.</em>
+          </h2>
+
+          <p class="sec-sub">
+            Randevu, çalışma saatleri ve konum bilgileri için aşağıdaki
+            iletişim kanallarını kullanabilirsiniz.
+          </p>
+
+        </div>
+
+
+        <div class="location-grid">
+
+
+          <div class="map-card reveal">
+
+            <div class="map-content">
+
+              <h3>Tahir Dastan Hair Design</h3>
+
+              <p>
+                Konum için Google Maps üzerinden yol tarifi alabilirsiniz.
+              </p>
+
+              <a
+                href="https://maps.app.goo.gl/h6yJHbL4vkA2HwRU9"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-primary"
+              >
+                Google Maps’te Aç
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <div class="location-info reveal">
+
+
+            <div class="info-block">
+
+              <div class="info-label">
+                Telefon
+              </div>
+
+              <div class="info-value">
+                <a href="tel:+905301822270">
+                  +90 530 182 22 70
+                </a>
+              </div>
+
+            </div>
+
+
+            <div class="info-block">
+
+              <div class="info-label">
+                Instagram
+              </div>
+
+              <div class="info-value">
+
+                <a
+                  href="https://www.instagram.com/tahirdastanhairdesign/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  @tahirdastanhairdesign
+                </a>
+
+              </div>
+
+            </div>
+
+
+            <div class="info-block">
+
+              <div class="info-label">
+                Çalışma Saatleri
+              </div>
+
+              <div class="hours">
+
+                <div class="hours-row">
+                  <span>Pazartesi</span>
+                  <span>09:00 – 20:00</span>
+                </div>
+
+                <div class="hours-row">
+                  <span>Salı</span>
+                  <span>Kapalı</span>
+                </div>
+
+                <div class="hours-row">
+                  <span>Çarşamba</span>
+                  <span>09:00 – 20:00</span>
+                </div>
+
+                <div class="hours-row">
+                  <span>Perşembe</span>
+                  <span>09:00 – 20:00</span>
+                </div>
+
+                <div class="hours-row">
+                  <span>Cuma</span>
+                  <span>09:00 – 20:00</span>
+                </div>
+
+                <div class="hours-row">
+                  <span>Cumartesi</span>
+                  <span>09:00 – 20:00</span>
+                </div>
+
+                <div class="hours-row">
+                  <span>Pazar</span>
+                  <span>10:00 – 19:00</span>
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         INSTAGRAM
+    ========================= -->
+
+    <section class="instagram">
+
+      <div class="container">
+
+        <div class="instagram-head reveal">
+
+          <div>
+
+            <div class="kicker">
+              Instagram
+            </div>
+
+            <h2 class="h2">
+              Güncel <em>çalışmalar.</em>
+            </h2>
+
+          </div>
+
+          <a
+            href="https://www.instagram.com/tahirdastanhairdesign/"
+            target="_blank"
+            rel="noopener"
+            class="instagram-link"
+          >
+            @tahirdastanhairdesign →
+          </a>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+          <div class="gallery-item reveal">
+            <img
+              src="731058971_18324032986276415_7768105891657908004_n.jpg"
+              alt="Tahir Dastan Hair Design Instagram çalışması"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="gallery-item reveal">
+            <img
+              src="746073840_18325449121276415_2716768327370740384_n.jpg"
+              alt="Tahir Dastan Hair Design Instagram çalışması"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="gallery-item reveal">
+            <img
+              src="764340786_18328825699276415_1482809935894578885_n.jpg"
+              alt="Tahir Dastan Hair Design Instagram çalışması"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="gallery-item reveal">
+            <img
+              src="805405881_18336066874276415_2627075590166724358_n.jpg"
+              alt="Tahir Dastan Hair Design Instagram çalışması"
+              loading="lazy"
+            >
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
 
     <div class="container">
 
-      <div class="instagram-inner reveal">
+      <div class="footer-top">
 
-        <div class="instagram-icon">◎</div>
-
-        <div class="kicker">Instagram</div>
-
-        <h2>
-          Stilimizden
-          <br>kareler.
-        </h2>
-
-        <p class="section-sub">
-          Güncel çalışmalar ve salonun dünyasından
-          seçilmiş kareler.
-        </p>
-
-      </div>
-
-      <div class="gallery">
-
-        <div class="gallery-item reveal">
-          <img
-            src="731058971_18324032986276415_7768105891657908004_n.jpg"
-            alt="Tahir Dastan Hair Design saç çalışması"
-            loading="lazy">
+        <div class="footer-brand">
+          Tahir Dastan <span>Hair Design</span>
         </div>
 
-        <div class="gallery-item reveal">
-          <img
-            src="746073840_18325449121276415_2716768327370740384_n.jpg"
-            alt="Tahir Dastan Hair Design saç çalışması"
-            loading="lazy">
-        </div>
+        <div class="footer-links">
 
-        <div class="gallery-item reveal">
-          <img
-            src="764340786_18328825699276415_1482809935894578885_n.jpg"
-            alt="Tahir Dastan Hair Design saç çalışması"
-            loading="lazy">
-        </div>
+          <a href="#hizmetler">
+            Hizmetler
+          </a>
 
-        <div class="gallery-item reveal">
-          <img
-            src="805405881_18336066874276415_2627075590166724358_n.jpg"
-            alt="Tahir Dastan Hair Design saç çalışması"
-            loading="lazy">
+          <a href="#galeri">
+            Galeri
+          </a>
+
+          <a href="#yorumlar">
+            Yorumlar
+          </a>
+
+          <a href="#iletisim">
+            İletişim
+          </a>
+
+          <a
+            href="https://www.instagram.com/tahirdastanhairdesign/"
+            target="_blank"
+            rel="noopener"
+          >
+            Instagram
+          </a>
+
         </div>
 
       </div>
 
-      <div style="text-align:center;margin-top:40px;">
 
-        <a class="btn btn-outline"
-           href="https://www.instagram.com/tahirdastanhairdesign/"
-           target="_blank">
-          Instagram'da Bizi Takip Et
-        </a>
+      <div class="footer-bottom">
+
+        <span>
+          © 2026 Tahir Dastan Hair Design. Tüm hakları saklıdır.
+        </span>
+
+        <span>
+          Women’s Hair Design
+        </span>
 
       </div>
 
     </div>
 
-  </section>
-
-</main>
-
-<!-- FOOTER -->
-
-<footer>
-
-  <div class="container">
-
-    <div class="footer-top">
-
-      <div class="footer-brand">
-
-        <div class="logo">
-          Tahir Dastan
-          <span>Hair Design</span>
-        </div>
-
-        <p>
-          Profesyonel saç tasarımı ve kişisel stil.
-        </p>
-
-      </div>
-
-      <div class="footer-links">
-
-        <a href="#hizmetler">Hizmetler</a>
-
-        <a href="#yorumlar">Yorumlar</a>
-
-        <a href="#iletisim">İletişim</a>
-
-        <a href="https://www.instagram.com/tahirdastanhairdesign/"
-           target="_blank">
-          Instagram
-        </a>
-
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-
-      <span>
-        © 2026 Tahir Dastan Hair Design
-      </span>
-
-      <span>
-        İzmir / Konak
-      </span>
-
-    </div>
-
-  </div>
-
-</footer>
-
-<!-- FLOATING WHATSAPP -->
-
-<a class="whatsapp"
-   href="https://wa.me/905301822270?text=Merhaba%2C%20Tahir%20Dastan%20Hair%20Design%27dan%20randevu%20almak%20istiyorum.%20Uygun%20g%C3%BCn%20ve%20saatleri%20%C3%B6%C4%9Frenebilir%20miyim%3F"
-   target="_blank">
-
-  <span class="whatsapp-icon">◉</span>
-  WhatsApp'tan Randevu
-
-</a>
-
-<script>
-
-  /* HEADER */
-
-  const header = document.getElementById("header");
-
-  window.addEventListener("scroll", () => {
-
-    if (window.scrollY > 50) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
-
-  });
+  </footer>
 
 
-  /* MOBILE MENU */
+  <!-- =========================
+       FLOATING WHATSAPP
+  ========================= -->
 
-  function toggleMenu() {
+  <a
+    href="https://wa.me/905301822270?text=Merhaba%2C%20Tahir%20Dastan%20Hair%20Design%27dan%20randevu%20almak%20istiyorum.%20Uygun%20g%C3%BCn%20ve%20saatleri%20%C3%B6%C4%9Frenebilir%20miyim%3F"
+    class="whatsapp-float"
+    target="_blank"
+    aria-label="WhatsApp'tan randevu al"
+  >
 
-    const links = document.querySelector(".nav-links");
+    <svg
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M20.52 3.48A11.84 11.84 0 0 0 12.05 0C5.5 0 .17 5.32.17 11.88c0 2.09.55 4.13 1.59 5.93L.1 24l6.33-1.63a11.9 11.9 0 0 0 5.62 1.43h.01c6.55 0 11.88-5.33 11.88-11.89 0-3.17-1.23-6.15-3.42-8.43ZM12.06 21.75h-.01a9.84 9.84 0 0 1-5.01-1.37l-.36-.21-3.76.97 1-3.67-.23-.38a9.83 9.83 0 0 1-1.51-5.21c0-5.42 4.41-9.83 9.84-9.83 2.63 0 5.1 1.03 6.96 2.89a9.8 9.8 0 0 1 2.88 6.97c0 5.43-4.41 9.84-9.8 9.84Zm5.4-7.37c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.46-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.88 1.22 3.08.15.2 2.1 3.21 5.09 4.5.71.31 1.27.5 1.71.64.72.23 1.38.2 1.9.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+    </svg>
 
-    if (links.style.display === "flex") {
-      links.style.display = "";
-      return;
-    }
-
-    links.style.position = "absolute";
-    links.style.top = "70px";
-    links.style.left = "0";
-    links.style.width = "100%";
-    links.style.background = "rgba(17,16,15,.98)";
-    links.style.padding = "25px";
-    links.style.flexDirection = "column";
-    links.style.alignItems = "flex-start";
-    links.style.display = "flex";
-    links.style.borderBottom = "1px solid rgba(255,255,255,.08)";
-
-  }
+  </a>
 
 
-  /* SCROLL REVEAL */
+  <!-- =========================
+       JAVASCRIPT
+  ========================= -->
 
-  const observer = new IntersectionObserver(
-    (entries) => {
+  <script>
+    const revealElements = document.querySelectorAll(".reveal");
 
-      entries.forEach(entry => {
-
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-
-      });
-
-    },
-    {
-      threshold: .12
-    }
-  );
-
-
-  document.querySelectorAll(".reveal").forEach(el => {
-    observer.observe(el);
-  });
-
-
-  /* CLOSE MOBILE MENU */
-
-  document.querySelectorAll(".nav-links a").forEach(link => {
-
-    link.addEventListener("click", () => {
-
-      if (window.innerWidth <= 850) {
-        document.querySelector(".nav-links").style.display = "";
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.12
       }
+    );
 
+    revealElements.forEach((element) => {
+      revealObserver.observe(element);
     });
-
-  });
-
-</script>
+  </script>
 
 </body>
 </html>
