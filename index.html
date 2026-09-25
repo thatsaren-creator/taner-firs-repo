@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -159,7 +158,7 @@
       background:
         linear-gradient(90deg, rgba(8,7,6,.88) 0%, rgba(8,7,6,.62) 45%, rgba(8,7,6,.35) 100%),
         linear-gradient(0deg, rgba(8,7,6,.55), transparent 45%),
-        url("hero.jpg") center/cover no-repeat;
+        url("Gemini_Generated_Image_3yl3ji3yl3ji3yl3.jpg") center/cover no-repeat;
     }
 
     .hero-content {
@@ -359,8 +358,9 @@
     .about-image {
       min-height: 550px;
       background:
-        linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.3)),
-        url("hero.jpg") center/cover;
+        linear-gradient(rgba(0,0,0,.08), rgba(0,0,0,.3)),
+        url("unnamed.jpg") center/cover no-repeat;
+      background-position: center;
     }
 
     .about-copy p {
@@ -508,16 +508,16 @@
       justify-content: center;
     }
 
-    /* INSTAGRAM */
+    /* INSTAGRAM / GALLERY */
 
     .instagram {
       background: var(--bg-soft);
-      text-align: center;
     }
 
     .instagram-inner {
-      max-width: 700px;
+      max-width: 900px;
       margin: auto;
+      text-align: center;
     }
 
     .instagram-icon {
@@ -530,6 +530,45 @@
       margin: 0 auto 22px;
       color: var(--gold-light);
       font-size: 21px;
+    }
+
+    .gallery {
+      margin-top: 55px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      text-align: left;
+    }
+
+    .gallery-item {
+      position: relative;
+      height: 360px;
+      overflow: hidden;
+      background: var(--card);
+      border: 1px solid var(--border);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .6s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery-item::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        transparent 55%,
+        rgba(0,0,0,.35)
+      );
+      pointer-events: none;
     }
 
     /* FOOTER */
@@ -635,7 +674,7 @@
         background:
           linear-gradient(90deg, rgba(8,7,6,.82), rgba(8,7,6,.48)),
           linear-gradient(0deg, rgba(8,7,6,.7), transparent),
-          url("hero.jpg") center/cover no-repeat;
+          url("Gemini_Generated_Image_3yl3ji3yl3ji3yl3.jpg") center/cover no-repeat;
       }
 
       .hero h1 {
@@ -684,6 +723,16 @@
         min-height: 320px;
       }
 
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 40px;
+      }
+
+      .gallery-item {
+        height: 300px;
+      }
+
       .footer-top {
         flex-direction: column;
       }
@@ -721,6 +770,14 @@
 
       .hero-content {
         padding-top: 60px;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item {
+        height: 430px;
       }
     }
   </style>
@@ -1120,7 +1177,7 @@
 
   </section>
 
-  <!-- INSTAGRAM -->
+  <!-- INSTAGRAM / STİLİMİZDEN KARELER -->
 
   <section class="instagram">
 
@@ -1138,11 +1195,45 @@
         </h2>
 
         <p class="section-sub">
-          Güncel çalışmalar ve salonun dünyası için
-          Instagram hesabımızı takip et.
+          Güncel çalışmalar ve salonun dünyasından
+          seçilmiş kareler.
         </p>
 
-        <br>
+      </div>
+
+      <div class="gallery">
+
+        <div class="gallery-item reveal">
+          <img
+            src="731058971_18324032986276415_7768105891657908004_n.jpg"
+            alt="Tahir Dastan Hair Design saç çalışması"
+            loading="lazy">
+        </div>
+
+        <div class="gallery-item reveal">
+          <img
+            src="746073840_18325449121276415_2716768327370740384_n.jpg"
+            alt="Tahir Dastan Hair Design saç çalışması"
+            loading="lazy">
+        </div>
+
+        <div class="gallery-item reveal">
+          <img
+            src="764340786_18328825699276415_1482809935894578885_n.jpg"
+            alt="Tahir Dastan Hair Design saç çalışması"
+            loading="lazy">
+        </div>
+
+        <div class="gallery-item reveal">
+          <img
+            src="805405881_18336066874276415_2627075590166724358_n.jpg"
+            alt="Tahir Dastan Hair Design saç çalışması"
+            loading="lazy">
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:40px;">
 
         <a class="btn btn-outline"
            href="https://www.instagram.com/tahirdastanhairdesign/"
@@ -1308,4 +1399,3 @@
 
 </body>
 </html>
-```
